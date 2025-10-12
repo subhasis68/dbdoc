@@ -1,0 +1,14 @@
+services:
+  web:
+    image: subhnand/dbdoc-app:v1.0   # Docker Hub image
+    container_name: dbdoc-web
+    ports:
+      - "3000:3000"                   # Map container port 3000 to host port 3000
+    networks:
+      - flink-net                      # Connect to existing network if needed
+    restart: unless-stopped
+
+networks:
+  flink-net:
+    external: true
+

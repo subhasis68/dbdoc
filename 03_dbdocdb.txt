@@ -1,0 +1,28 @@
+CREATE DATABASE dbdocdb WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.utf8';
+
+-----------
+
+CREATE TABLE public.metadata_store (
+    id bigint NOT NULL,
+    connection_hash text NOT NULL,
+    version integer NOT NULL,
+    metadata_json jsonb NOT NULL,
+    updated_at timestamp without time zone DEFAULT now(),
+    updated_by text
+);
+
+ALTER TABLE public.metadata_store ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.metadata_store_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+ALTER TABLE ONLY public.metadata_store
+    ADD CONSTRAINT metadata_store_pkey PRIMARY KEY (id);
+    
+ALTER TABLE ONLY public.metadata_store
+    ADD CONSTRAINT metadata_store_unique_version UNIQUE (connection_hash, version);
+

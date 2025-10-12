@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: postgres_dbdoc
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=dbdocdb
+    ports:
+      - "5431:5432"
+    networks:
+      - flink-net
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  flink-net:
+    external: true
+
+volumes:
+  pgdata:
