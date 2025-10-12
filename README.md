@@ -19,3 +19,6 @@ As of now, dbdoc supports databases for Postgres, MySQL, MongoDB, MS SQL Server,
 
 # Preview
 <img width="1822" height="882" alt="pic1" src="https://github.com/user-attachments/assets/abed4f0f-c0b5-43d8-812a-ef0bddb9501e" />
+
+# Installation
+[dbdoc-manual.pdf](https://github.com/user-attachments/files/22871272/dbdoc-manual.pdf)
