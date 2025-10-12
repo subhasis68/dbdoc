@@ -1,5 +1,8 @@
 # About dbdoc
-dbdoc is a browser based application that fetches metadata of a database and shows it on screen in a tree structure. When a node (database, tables, views, functions, procedures etc.) shown in the tree is right-clicked, a popup window opens up for the user to add / edit / view description of the node.
+dbdoc is a browser based application that fetches metadata of a database and shows it on screen in a tree structure. 
+
+When a node (database, tables, views, functions, procedures etc.) shown in the tree is right-clicked, a popup window opens up for the user to add / edit / view description of the node.
+
 The tree structure can be stored, along with the user-feeded description for different database entities and relationships, in a database (Postgres) in jsonb format and retrieved at a later stage to show in the tree structure as usual.
 
 # Features
@@ -16,6 +19,3 @@ As of now, dbdoc supports databases for Postgres, MySQL, MongoDB, MS SQL Server,
 
 # Preview
 <img width="1822" height="882" alt="pic1" src="https://github.com/user-attachments/assets/abed4f0f-c0b5-43d8-812a-ef0bddb9501e" />
-
-
-
