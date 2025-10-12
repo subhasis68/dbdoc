@@ -15,6 +15,7 @@ The tree structure can be stored, along with the user-feeded description for dif
 As of now, dbdoc supports databases for Postgres, MySQL, MongoDB, MS SQL Server, Oracle, IBM DB2
 
 # Preview
-<img width="1834" height="882" alt="pic1" src="https://github.com/user-attachments/assets/3f6b63d2-c4e8-4071-bf8d-962195f991dd" />
+<img width="1822" height="882" alt="pic1" src="https://github.com/user-attachments/assets/abed4f0f-c0b5-43d8-812a-ef0bddb9501e" />
+
 
 
