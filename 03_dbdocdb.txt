@@ -7,7 +7,7 @@ CREATE TABLE public.metadata_store (
     connection_hash text NOT NULL,
     version integer NOT NULL,
     metadata_json jsonb NOT NULL,
-    updated_at timestamp without time zone DEFAULT now(),
+    updated_at timestamptz DEFAULT now(),
     updated_by text
 );
 
