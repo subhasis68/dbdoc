@@ -27,4 +27,7 @@ dbdoc is installed in docker. Please download the dbdoc manual from the below li
 
 [dbdoc-manual.pdf](https://github.com/user-attachments/files/23432285/dbdoc-manual.pdf)
 
+# Note:
+The manual is meant to use dbdoc-app v2.0. The v2.0 of dbdoc uses Google Gemini AI to enrich database documentation and it requires Google Gemini subscription, though there is a limited free usage.
 
+If you do not want to use the AI, you can safely use the v1.0 of dbdoc-app using the docker compose file 05_dbdoc-app.yaml provided with this github repository. In that case you would not require the .env file provided in this github repository.
