@@ -25,7 +25,8 @@ Pre-requistes: You must have docker desktop installed.
 
 dbdoc is installed in docker. Please download the dbdoc manual from the below link and follow the procedures.
 
-[dbdoc-manual.pdf](https://github.com/user-attachments/files/23432285/dbdoc-manual.pdf)
+[dbdoc-manual.pdf](https://github.com/user-attachments/files/23436590/dbdoc-manual.pdf)
+
 
 # Note:
 The manual is meant to use dbdoc-app v2.0. The v2.0 of dbdoc uses Google Gemini AI to enrich database documentation and it requires Google Gemini subscription, though there is a limited free usage.
